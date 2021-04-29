@@ -29,7 +29,7 @@ export default function EventPropagation(props) {
 
   return (
     <div className="container">
-      <div id="grandParent" onClick={handleClickGrand}>
+      <div id="grandParent" onClickCapture={handleClickGrand}>
         <div id="parent" onClick={handleClickParent}>
           <div id="child" onClick={handleClickButton}>
             Click Me
@@ -69,6 +69,7 @@ export default function EventPropagation(props) {
         </div>
 
         <textarea value={logLines.join("\n")} />
+        <button onClick={() => setLogLines([])}>Clear Console</button>
       </div>
     </div>
   );
