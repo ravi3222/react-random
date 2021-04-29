@@ -1,0 +1,27 @@
+.container {
+  text-align: center;
+  font-size: 30px;
+}
+#grandParent {
+  border: 2px solid red;
+  padding: 30px;
+}
+#parent {
+  border: 2px solid blue;
+  padding: 30px;
+}
+#child {
+  border: 2px solid green;
+}
+input:hover {
+  background-color: red;
+}
+textarea {
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  /* border: none; */
+  border: 2px solid cadetblue;
+  outline-color: rgb(0, 60, 139);
+  /* outline-style: none; */
+}
