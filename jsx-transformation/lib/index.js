@@ -1,6 +1,16 @@
+/** @jsx jsxCallback */
 let c = 9;
-const jsxExpression = /*#__PURE__*/React.createElement("div", {
+
+const jsxCallback = (tag, props, children) => {
+  console.log({
+    tag: tag,
+    props: props,
+    children: children
+  });
+};
+
+const jsxExpression = jsxCallback("div", {
   className: "test"
-}, /*#__PURE__*/React.createElement("p", {
+}, jsxCallback("p", {
   onClick: () => console.log("click")
 }, c));
