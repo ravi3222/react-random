@@ -1,6 +1,5 @@
-import { jsx as _jsx } from "myOwnJSX/jsx-runtime";
-
-/** @jsxImportSource myOwnJSX */
+import { jsx as _jsx } from "react/jsx-runtime";
+// jsx jsxCallback pragma
 let c = 9; // const jsxCallback = (tag, props, children) => {
 //   console.log({
 //     tag: tag,
@@ -9,9 +8,9 @@ let c = 9; // const jsxCallback = (tag, props, children) => {
 //   });
 // };
 
-const jsxExpression = _jsx("div", {
+const jsxExpression = /*#__PURE__*/_jsx("div", {
   className: "test",
-  children: _jsx("p", {
+  children: /*#__PURE__*/_jsx("p", {
     onClick: () => console.log("click"),
     children: c
   })

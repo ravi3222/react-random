@@ -1,4 +1,4 @@
-// jsx jsxCallback pragma
+/** @jsxImportSource myOwnJSX */
 let c = 9;
 
 // const jsxCallback = (tag, props, children) => {
