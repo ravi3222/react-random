@@ -1,0 +1,14 @@
+{
+  "name": "jsx-transformation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-transform-react-jsx": "^7.13.12"
+  }
+}
